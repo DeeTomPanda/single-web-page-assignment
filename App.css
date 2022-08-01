@@ -1,0 +1,251 @@
+html body
+{
+	margin:0;
+	padding:0;
+	background-color:beige;
+}
+
+.container
+{
+	display:flex;
+	flex:1;
+	height:100vh;
+	width:100vw;
+	flex-direction:column;
+}
+
+.MainHead
+{
+	display:flex;
+	flex:0 1 12%;
+	width:100vw;
+	flex-direction:row;
+	background-color:white;
+	align-items:center;
+
+}
+
+#Estatery
+{
+	font-weight:bold;
+	color:darkorchid;
+	font-size:1.5em;
+	margin-left:3px;
+}
+
+.left-flex
+{
+	display:flex;
+	flex:1;
+	flex-direction:row;
+        justify-content:flex-start;
+	align-items:center;
+}
+
+.right-flex
+{
+	display:flex;
+	flex:0.5;
+	flex-direction:row-reverse;
+	align-items:center;
+}
+
+.main-item
+{
+	margin:1em;
+	padding:1%;
+}
+
+.main-item:hover 
+{
+  background: lavender;
+  color: blueviolet;
+}
+
+.border
+{
+	height:20px;
+	padding:5px;
+	border:2px solid silver;
+	border-radius:5px;
+	color:blueviolet;
+}
+
+.bgblueviolet
+{
+	background-color:blueviolet;
+	border-color:blueviolet;
+	color:white;
+}
+
+.Head
+{
+	display:flex;
+	flex:0 0 20%;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:2.5% 7.5% 0% 7.5%;
+	align-items:baseline;
+}
+
+.bigText
+{
+	font-size:2.5em;
+	font-weight:bold;
+}
+
+.input
+{
+	height:30px;
+	border-radius:6px;
+}
+
+.filterMenu
+{
+	display:flex;
+	flex:0 1 13%;
+	flex-direction:row;
+	margin:0% 7.5% 1.5% 7.5%;
+	justify-content:space-between;
+	background-color:white;
+	align-items:center;
+}
+
+.filters
+{
+  	margin:8px;
+	width:10%;
+	padding-left:4%;
+	border-left:1px solid gray;
+}
+
+.filter-title
+{
+	font-size:0.95em;
+	color:grey;
+}
+
+.filter-input
+{
+	border:none;
+	width:120%;
+	background-color:transparent;
+	font-size:1em;
+	font-weight:bold
+}
+
+.filter-date-input
+{
+	width:155%;
+}
+
+.filters > ::placeholder {
+  color: black;
+  opacity:1;
+}
+.search
+{
+	border:none;
+}
+
+.search-button
+{
+	display:flex;
+	flex:1;
+	flex-direction:row;
+	height:40px;
+	padding:7px;
+	justify-content:center;
+        align-items:center;
+	border-radius:8px;
+	font-size:1.15em;
+}
+
+.grid
+{
+	margin:4% 7.5% 1% 7.5%;
+	display:grid;
+	grid-auto-flow:row;
+	grid-template-columns:32% auto 32%;
+	grid-gap:2.5%;
+
+}
+
+.grid-item
+{
+	display:flex;
+	flex-direction:column;
+	align-items:space-between;
+	background-color:white;
+}
+
+.grid-item>img
+{
+	height:40%;
+	width:100%;
+	margin:0;
+	border-radius:10px;
+}
+
+.grid-data-item
+{
+	display:flex;
+	flex-direction:column;
+	padding:10px;
+	justify-content:space-around;
+}
+
+.price-and-like
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	color:blueviolet;
+}
+
+h2
+{
+	display:inline;
+}
+
+.like-button
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid silver;
+	border-radius:16px;
+	width:30px;
+	height:30px;
+}
+
+svg
+{
+	stroke:#ff3212;
+	fill:#ff3212;
+}
+
+.item-address
+{
+	color:grey;
+}
+
+.basic-amenities
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height:20%;
+	align-items:stretch;
+	margin-bottom:auto;
+	align-items:flex-end;
+	font-size:80%;
+	color:grey;
+}
+
+.basic-amenities>div>img
+{
+	float:left;
+	height:25%;
+	width:25%;
+}
