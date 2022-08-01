@@ -144,10 +144,10 @@ function App()
 			                       onClik:doNothing
 			                      }))
 
- const [place,setPlace]=React.useState(getLocal("place"));
+ const [place,setPlace]=React.useState(getLocal("place")||"Place");
  const [date,setDate]=React.useState(new Date().toISOString().slice(0,10));
- const [price,setPrice]=React.useState(getLocal("price"));
- const [type,setPType]=React.useState(getLocal("type"));
+ const [price,setPrice]=React.useState(getLocal("price")?getLocal("price"):"$0-$3000");
+ const [type,setPType]=React.useState(getLocal("type")||'Villas');
  const [gridArray,setGridArray]=React.useReducer(reducerFunction,dataArray); 
  
  const onPlaceChange=(value)=>setPlace(value);
